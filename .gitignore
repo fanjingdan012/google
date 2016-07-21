@@ -1,0 +1,11 @@
+**/.classpath
+**/.project
+**/.settings/**
+**/**/**/target
+**/target
+**/**/target
+**/javaw_*.log
+**/.svn/**
+**/*.iml
+**/.idea/**
+**/.m2/**
