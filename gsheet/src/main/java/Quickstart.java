@@ -105,6 +105,7 @@ public class Quickstart {
 
         // Prints the names and majors of students in a sample spreadsheet:
         // https://docs.google.com/spreadsheets/d/1BxiMVs0XRA5nFMdKvBdBZjgmUUqptlbs74OgvE2upms/edit
+        // https://docs.google.com/spreadsheets/d/1N4DBBvz1l0CuV64c2ZSFbp-L49jpViMbUlom6BqpOKs/edit
         String spreadsheetId = "1N4DBBvz1l0CuV64c2ZSFbp-L49jpViMbUlom6BqpOKs";
         String range = "Sheet1!A2:E";
         ValueRange response = service.spreadsheets().values()
@@ -167,8 +168,8 @@ public class Quickstart {
     }
 
     public static void main(String[] args) throws IOException {
-        readSheet();
-        //writeSheet("Sheet2","A1","B2");
+        //readSheet();
+        writeSheet("Sheet2","A1","B2");
     }
 
 
