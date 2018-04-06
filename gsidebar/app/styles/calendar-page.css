@@ -1,0 +1,16 @@
+@-webkit-keyframes calendar-event-opened {
+    from { clip: rect(1px, auto, auto, auto); }
+    to { clip: rect(0px, auto, auto, auto); }
+}
+#coverinner > div {
+  animation-duration: 0.001s;
+  -o-animation-duration: 0.001s;
+  -ms-animation-duration: 0.001s;
+  -moz-animation-duration: 0.001s;
+  -webkit-animation-duration: 0.001s;
+  animation-name: calendar-event-opened;
+  -o-animation-name: calendar-event-opened;
+  -ms-animation-name: calendar-event-opened;
+  -moz-animation-name: calendar-event-opened;
+  -webkit-animation-name: calendar-event-opened;
+}

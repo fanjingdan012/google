@@ -1,0 +1,412 @@
+ fonts */
+@font-face {
+  font-family: "Material-Design-Icons";
+  src: url("../fonts/Material-Design-Icons.eot?#iefix") format("embedded-opentype"), url("../fonts/Material-Design-Icons.woff2") format("woff2"), url("../fonts/Material-Design-Icons.woff") format("woff"), url("../fonts/Material-Design-Icons.ttf") format("truetype"), url("../fonts/Material-Design-Icons.svg#Material-Design-Icons") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Thin.woff2") format("woff2"), url("../fonts/Roboto-Thin.woff") format("woff"), url("../fonts/Roboto-Thin.ttf") format("truetype");
+  font-weight: 200; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Light.woff2") format("woff2"), url("../fonts/Roboto-Light.woff") format("woff"), url("../fonts/Roboto-Light.ttf") format("truetype");
+  font-weight: 300; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype");
+  font-weight: 500; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: 700; }
+
+/*
+* new materialize icons
+*/
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/new-material-icon.woff2") format('woff2');
+}
+
+/* end of fonts */
+/* sidebar related css */
+
+body .dw .nH .nH .no .nH.nn:last-child {
+  width: 100px !important;
+}
+body.wizy-sidebar-open .dw .nH .nH .no .nH.nn:last-child {
+  width: 320px !important;
+}
+/*body.wizy-sidebar-open .Tm.aeJ, body.wizy-sidebar-open .Tm.age {
+  width: calc(100% - 280px) !important;
+  padding-right: 0px;
+}*/
+body .Tm.aeJ, body .Tm.age {
+  padding-right: 0px;
+}
+body.wizy-sidebar-open .AO {
+  margin-right: 280px;
+}
+body .AO {
+  margin-right: 21px;
+}
+body.wizy-sidebar-open table[role="presentation"] .y3 {
+  display: none;
+}
+.wizy-panel .preloader-wrapper {
+  top: 50%;
+}
+.wizy-panel .preloader-parent {
+  height: 120%;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+#wizy-sidebar-container {
+  height: 100%;
+  padding-top: 108px;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+#wizy-sidebar-panel {
+  position: relative;
+  height: 100%;
+  background: rgb(255, 255, 255);
+  /*border-left: 1px solid rgb(230, 230, 230);*/
+  box-sizing: border-box;
+  color: rgb(120, 120, 120);
+  font-size: 14px;
+  overflow: visible;
+  width: 280px;
+  pointer-events: all;
+  font-family: "Roboto", sans-serif;
+}
+#wizy-sidebar-panel .panel {
+  animation-duration: 0.4s;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+}
+#wizy-sidebar-panel .panel, .wizy-panel, #panel-content-container > div {
+  height: 100%;
+}
+#wizy-sidebar-panel {
+  display: block !important;
+  transform: translateX(259px);
+  transition: transform 0.2s cubic-bezier(0.55, 0, 0, 1);
+}
+.wizy-sidebar-open #wizy-sidebar-panel {
+  transform: none;
+}
+.wizy-sidebar-open #wizy-sidebar-panel .main.panel {
+  display: block !important;
+}
+#wizy-sidebar-panel .main.panel {
+  display: none;
+}
+.wizy-sidebar-open #wizy-sidebar-panel .wizy-sidebar-handle > .material-icons{
+  transform: rotate(180deg) !important;
+}
+#wizy-sidebar-panel .main.panel{
+  /*display: none;*/
+}
+/* end of sidebar */
+/* mutation observers */
+@-webkit-keyframes gmail-compose-link-inserted {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+.Am.Al.editable.LW-avf a {
+  animation-duration: 0.001s;
+  -webkit-animation-duration: 0.001s;
+  animation-name: gmail-compose-link-inserted;
+  -webkit-animation-name: gmail-compose-link-inserted;
+}
+
+@-webkit-keyframes gmail-compose-dialog {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+.nH.Hd[role=dialog] {
+    animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    animation-name: gmail-compose-dialog;
+    -webkit-animation-name: gmail-compose-dialog;
+}
+@-webkit-keyframes gmail-reply-open{
+    from { clip: rect(1px, auto, auto, auto); }
+    to { clip: rect(0px, auto, auto, auto); }
+}
+
+.gB .ip.adB .aoP.HM{
+    animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    animation-name: gmail-reply-open;
+    -webkit-animation-name: gmail-reply-open;
+}
+@-webkit-keyframes recepient-added {
+  from { clip: rect(0px, auto, auto, auto); }
+  to { clip: rect(1px, auto, auto, auto); }
+}
+.vN.a3q {
+    animation-duration: 0.001s;
+    -o-animation-duration: 0.001s;
+    -ms-animation-duration: 0.001s;
+    -moz-animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    animation-name: recepient-added;
+    -o-animation-name: recepient-added;
+    -ms-animation-name: recepient-added;
+    -moz-animation-name: recepient-added;
+    -webkit-animation-name: recepient-added;
+
+}
+
+@-webkit-keyframes email-inserted {
+  from { clip: rect(0px, auto, auto, auto); }
+  to { clip: rect(1px, auto, auto, auto); }
+}
+.nH.hx .nH .h7 {
+    animation-duration: 0.001s;
+    -o-animation-duration: 0.001s;
+    -ms-animation-duration: 0.001s;
+    -moz-animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    animation-name: email-inserted;
+    -o-animation-name: email-inserted;
+    -ms-animation-name: email-inserted;
+    -moz-animation-name: email-inserted;
+    -webkit-animation-name: email-inserted;
+
+}
+
+@-webkit-keyframes threadlist-changed {
+  from { clip: rect(0px, auto, auto, auto); }
+  to { clip: rect(1px, auto, auto, auto); }
+}
+table.F {
+    animation-duration: 0.001s;
+    -o-animation-duration: 0.001s;
+    -ms-animation-duration: 0.001s;
+    -moz-animation-duration: 0.001s;
+    -webkit-animation-duration: 0.001s;
+    animation-name: threadlist-changed;
+    -o-animation-name: threadlist-changed;
+    -ms-animation-name: threadlist-changed;
+    -moz-animation-name: threadlist-changed;
+    -webkit-animation-name: threadlist-changed;
+
+}
+
+@-webkit-keyframes create-request-btn-inserted {
+  from { clip: rect(1px, auto, auto, auto); }
+  to { clip: rect(0px, auto, auto, auto); }
+}
+a[href^="https://wizyapps.appspot.com/workflow/request/create"], a[href^="https://wizymail-dev.appspot.com/workflow/request/create"] {
+  animation-duration: 0.001s;
+  -webkit-animation-duration: 0.001s;
+  animation-name: gmail-reply-open;
+  -webkit-animation-name: create-request-btn-inserted;
+}
+@-webkit-keyframes gmail-notification{
+    from { clip: rect(1px, auto, auto, auto); }
+    to { clip: rect(0px, auto, auto, auto); }
+}
+.vh .bofITb{
+  animation-duration: 0.001s;
+  -o-animation-duration: 0.001s;
+  -ms-animation-duration: 0.001s;
+  -moz-animation-duration: 0.001s;
+  -webkit-animation-duration: 0.001s;
+  animation-name: gmail-notification;
+  -o-animation-name: gmail-notification;
+  -ms-animation-name: gmail-notification;
+  -moz-animation-name: gmail-notification;
+  -webkit-animation-name: gmail-notification;
+}
+/* mutation observers end
+/* scrollbar */
+::-webkit-scrollbar {
+    height: 16px;
+    overflow: visible;
+    width: 16px
+}
+
+::-webkit-scrollbar-button {
+    height: 0;
+    width: 0
+}
+
+::-webkit-scrollbar-track {
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 0 0 0 4px
+}
+
+::-webkit-scrollbar-track:horizontal {
+    border-width: 4px 0 0
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1)
+}
+
+::-webkit-scrollbar-track:horizontal:hover {
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .1)
+}
+
+::-webkit-scrollbar-track:active {
+    background-color: rgba(0, 0, 0, .05);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+::-webkit-scrollbar-track:horizontal:active {
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, .2);
+    background-clip: padding-box;
+    border: solid transparent;
+    border-width: 1px 1px 1px 6px;
+    min-height: 28px;
+    padding: 100px 0 0;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    border-width: 6px 1px 1px;
+    padding: 0 0 0 100px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, .4);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25);
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, .25)
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.35)
+}
+
+::-webkit-scrollbar-corner {
+    background: transparent
+}
+
+body::-webkit-scrollbar-track-piece {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 0 0 0 3px;
+    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .14), inset -1px 0 0 rgba(0, 0, 0, .07)
+}
+
+body::-webkit-scrollbar-track-piece:horizontal {
+    border-width: 3px 0 0;
+    -webkit-box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07);
+    box-shadow: inset 0 1px 0 rgba(0, 0, 0, .14), inset 0 -1px 0 rgba(0, 0, 0, .07)
+}
+
+body::-webkit-scrollbar-thumb {
+    border-width: 1px 1px 1px 5px
+}
+
+body::-webkit-scrollbar-thumb:horizontal {
+    border-width: 5px 1px 1px
+}
+
+body::-webkit-scrollbar-corner {
+    background-clip: padding-box;
+    background-color: #f5f5f5;
+    border: solid #fff;
+    border-width: 3px 0 0 3px;
+    -webkit-box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .14);
+    box-shadow: inset 1px 1px 0 rgba(0, 0, 0, .14)
+}
+
+/* end of scrollbar*/
+
+/* other */
+.Am.Al.editable.LW-avf {
+    min-height: 340px !important;
+}
+#wizy-sidebar-panel a {
+  text-decoration: none;
+  color: #4A90E2;
+}
+/* compose bar */
+.wizy-compose-bar {
+  background-color: #f5f5f5;
+  border-top: 1px solid #cfcfcf !important;
+  border-width: 0 1px 1px 1px;
+  height: 42px;
+  margin: 0;
+  overflow-y: hidden;
+  transition: opacity 0.3s;
+  transition-timing-function: ease-out;
+}
+
+
+.wizy-compose-tools td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+.wizy-compose-tools .wizy-btn-text {
+  font-size: 12px;
+  font-weight: bold;
+  vertical-align: top;
+}
+
+.wizy-compose-tools > td.wizy-logo {
+  width: 24px;
+  padding: 0 8px;
+}
+.wizy-compose-tools > td.wizy-logo > img {
+  margin-top: 5px;
+}
+
+.wizy-compose-tools > td.wizy-btn-et {
+  width: 110px;
+}
+/* end of compose bar*/
+/* save email to sap */
+[type="checkbox"].filled-in.trck-cb + label:after{
+  height: 10px !important;
+  width: 10px !important;
+  top: 5px !important;
+}
+[type="checkbox"].filled-in.trck-cb + label:before {
+  left: -3px !important;
+  width: 6px !important;
+  /*top: 2px;*/
+}
+[type="checkbox"].filled-in.trck-cb + label{
+  padding-left: 20px;
+}
+/*end of save email to sap */
+/*

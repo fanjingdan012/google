@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "SAP Anywhere sidebar for Gmail",
+    "description": "Application name."
+  },
+  "appShortName": {
+    "message": "SAP Anywhere sidebar for Gmail",
+    "description": "Application's short name."
+  },
+  "appDescription": {
+    "message": "Connect SAP Anywhere to your Gmail, Contacts and Calendar, and create, edit and manage details directly from Gmail.",
+    "description": "Application's description."
+  }
+}
